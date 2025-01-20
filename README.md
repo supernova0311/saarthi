@@ -1,4 +1,6 @@
 <<<<<<< HEAD
+# saarthi---OUR second year pr project>
+# a team project --->
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -105,6 +107,5 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 
 =======
-# saarthi---OUR second year pr project>
-# a team project --->
->>>>>>> 25f9d31a4fa7ff23082e6a3bac2b21f2eca494fd
+
+>>>>>>> 25f9d31a4fa7ff23082e6a3bac2b21f2eca494f
