@@ -1,8 +1,8 @@
 "use client";
 import React from 'react';
 import { motion } from 'framer-motion';
-
-
+import Header from '../Header'
+import Footer from '../Footer'
 
 const HowitWorks = () => {
   const StepCard = ({ icon, title, description }) => (
@@ -35,6 +35,7 @@ const HowitWorks = () => {
 
   return (
     <div>
+      <Header/>
       {/* <Header /> */}
       <main className="bg-white text-gray-900">
         {/* How It Works Hero Section */}
@@ -198,7 +199,7 @@ const HowitWorks = () => {
           </div>
         </section>
       </main>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 };

@@ -2,6 +2,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { div } from 'framer-motion/client';
+import Header from '../Header'
+import Footer from '../Footer';
 
 
 
@@ -24,6 +26,7 @@ const About = () => {
   return (
     
     <div>
+      <Header/>
         {/* <Header/> */}
         <main className="bg-white text-gray-900">
       {/* About Hero Section */}
@@ -141,7 +144,7 @@ const About = () => {
         </div>
       </section>
     </main>
-    {/* <Footer/> */}
+    <Footer/> 
     </div>
   );
 };

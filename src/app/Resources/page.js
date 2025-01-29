@@ -1,7 +1,8 @@
 "use client";
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import Header from '../Header';
+import Footer from '../Footer';
 
 const Resources = () => {
   const ResourceCard = ({ icon, title, description }) => (
@@ -21,6 +22,7 @@ const Resources = () => {
 
   return (
     <div>
+      <Header/>
       {/* <Header /> */}
       <main className="bg-white text-gray-900">
         {/* Resources Hero Section */}
@@ -163,7 +165,7 @@ const Resources = () => {
           </div>
         </section>
       </main>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 };
