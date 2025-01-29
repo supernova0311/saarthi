@@ -6,6 +6,16 @@ const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
+import {
+  ClerkProvider,
+  ClerkLoading,
+  ClerkLoaded,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton
+} from '@clerk/nextjs'
+
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -18,14 +28,21 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <ClerkProvider>
+      <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <ClerkLoading>
+          <div className="flex items-center justify-center h-screen text-2xl">
+            LOADING....
+          </div>
+        </ClerkLoading>
         <Header/>
         {children}
         <Footer/>
-      </body>
-    </html>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
+

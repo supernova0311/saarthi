@@ -1,8 +1,8 @@
 "use client";
-
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useUser } from '@clerk/nextjs';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,8 +10,10 @@ const Header = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const { user } = useUser();
 
   return (
+    
     <header className="sticky top-0 z-50 bg-white shadow-md">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo with Click Event */}
@@ -85,10 +87,10 @@ const Header = () => {
 
         {/* Enroll Now Button */}
         <Link
-          href="/Enroll"
+          href="/sign-in"
           className="hidden md:inline-block bg-blue-500 text-white px-4 py-2 rounded text-sm font-medium hover:bg-blue-600 transition-transform transform hover:scale-110"
         >
-          Enroll Now
+          Sign In
         </Link>
 
         {/* Mobile Side Drawer */}

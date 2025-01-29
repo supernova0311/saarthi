@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 
 import React from "react";
 import Image from "next/image";
@@ -37,7 +38,9 @@ const Body = () => {
             whileTap={{ scale: 0.95 }}
             className="bg-yellow-400 text-blue-900 px-8 py-4 rounded-full font-semibold hover:bg-yellow-500 transition"
           >
+            <Link href='/sign-up'>
             Get Started
+            </Link >
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.1 }}
